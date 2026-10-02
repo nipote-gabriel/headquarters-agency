@@ -141,7 +141,7 @@
     color: var(--text);
 }
 
-.firm-brand img { height: 26px; width: 26px; object-fit: contain; border-radius: 5px; }
+.firm-brand img { height: 26px; width: auto; object-fit: contain; }
 
 .firm-brand-word {
     font-family: var(--display);
