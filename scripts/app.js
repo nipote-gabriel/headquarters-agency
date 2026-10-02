@@ -1,5 +1,5 @@
 /**
- * Headquarters Agency Website JavaScript
+ * WorldCorp International Website JavaScript
  * Handles loading and displaying podcast episodes and blog posts
  */
 
@@ -14,10 +14,12 @@ class HQVSite {
 
     async init() {
         try {
-            // Load configuration and data
-            await this.loadConfig();
-            await this.loadEpisodes();
-            await this.loadPosts();
+            // Load configuration and data in parallel
+            await Promise.all([
+                this.loadConfig(),
+                this.loadEpisodes(),
+                this.loadPosts()
+            ]);
             
             // Initialize UI components
             this.setupNavigation();
@@ -58,7 +60,7 @@ class HQVSite {
             this.displayError('Could not load site configuration.');
             // Fallback config
             this.config = {
-                site_name: "Headquarters Agency",
+                site_name: "WorldCorp International",
                 tagline: "Business, comedy, and the occasional bad idea.",
                 accent_color: "#2B6B99",
                 on_air: false,
@@ -819,6 +821,8 @@ class HQVSite {
         const muteToggle = document.getElementById('mute-toggle');
         const muteIcon = muteToggle?.querySelector('.mute-icon');
         const unmuteIcon = muteToggle?.querySelector('.unmute-icon');
+        const scrubber = document.getElementById('video-scrubber');
+        const playPauseBtn = document.getElementById('video-play-pause');
 
         if (!video || !muteToggle) return;
 
@@ -845,6 +849,45 @@ class HQVSite {
         // Initialize icon state
         muteIcon.style.display = 'none';
         unmuteIcon.style.display = 'block';
+
+        // Play/Pause button
+        if (playPauseBtn) {
+            const pauseIcon = playPauseBtn.querySelector('.pause-icon');
+            const playIcon = playPauseBtn.querySelector('.play-icon');
+
+            playPauseBtn.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                    pauseIcon.style.display = 'block';
+                    playIcon.style.display = 'none';
+                    playPauseBtn.setAttribute('aria-label', 'Pause video');
+                } else {
+                    video.pause();
+                    pauseIcon.style.display = 'none';
+                    playIcon.style.display = 'block';
+                    playPauseBtn.setAttribute('aria-label', 'Play video');
+                }
+            });
+        }
+
+        // Scrubber — sync position as video plays
+        if (scrubber) {
+            video.addEventListener('timeupdate', () => {
+                if (video.duration) {
+                    scrubber.value = (video.currentTime / video.duration) * 100;
+                    // Update fill color to show progress
+                    const pct = scrubber.value;
+                    scrubber.style.background = `linear-gradient(to right, white ${pct}%, rgba(255,255,255,0.3) ${pct}%)`;
+                }
+            });
+
+            // Seek when user drags scrubber
+            scrubber.addEventListener('input', () => {
+                if (video.duration) {
+                    video.currentTime = (scrubber.value / 100) * video.duration;
+                }
+            });
+        }
     }
 
 }

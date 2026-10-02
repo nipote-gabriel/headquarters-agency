@@ -3,368 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Featured - Headquarters Agency</title>
-    <meta name="description" content="Featured companies and business ventures. Business, comedy, and the occasional bad idea.">
-    <meta name="keywords" content="featured, investments, ventures, headquarters agency, business">
+    <title>Capabilities — WorldCorp International</title>
+    <meta name="description" content="Everything WorldCorp International offers, whether or not you asked for it.">
+    <meta name="keywords" content="capabilities, services, consulting, worldcorp international">
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://worldcorpinternational.com/portfolio">
-    <meta property="og:title" content="Featured - Headquarters Agency">
-    <meta property="og:description" content="Our featured companies and business ventures">
+    <meta property="og:title" content="Capabilities — WorldCorp International">
+    <meta property="og:description" content="Everything we offer, whether or not you asked for it.">
 
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://worldcorpinternational.com/portfolio">
-    <meta property="twitter:title" content="Featured - Headquarters Agency">
-    <meta property="twitter:description" content="Our featured companies and business ventures">
-    
-    <link rel="stylesheet" href="styles.css">
+    <meta property="twitter:title" content="Capabilities — WorldCorp International">
+    <meta property="twitter:description" content="Everything we offer, whether or not you asked for it.">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="graphic assets/favicon-32.png">
+    <link rel="icon" type="image/png" href="graphic assets/worldcorp-icon.png">
+    <link rel="apple-touch-icon" href="graphic assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#0a0a0b">
+
+    <link rel="stylesheet" href="styles-firm.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://subscribe-forms.beehiiv.com">
 </head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <a href="/" class="brand-link">
-                    <img src="graphic assets/Icon_Pure_Circle.png" alt="HQ" class="brand-icon">
-                    <h1 class="brand-title">Headquarters Agency</h1>
-                </a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="https://www.youtube.com/channel/UCir75v6OcimhuKf5Hrv8j7Q" target="_blank" class="nav-link">Videos</a></li>
-                <li><a href="https://worldcorpinternational.beehiiv.com/" target="_blank" class="nav-link">News</a></li>
-                <li><a href="portfolio.html" class="nav-link active">Featured</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="more.html" class="nav-link">More</a></li>
-            </ul>
-            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-    </header>
+<body class="firm-body">
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay">
-        <div class="mobile-menu-panel">
-            <div class="mobile-menu-header">
-                <h3 class="mobile-menu-title">Menu</h3>
-                <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
-            </div>
-            <ul class="mobile-nav-links">
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="https://www.youtube.com/channel/UCir75v6OcimhuKf5Hrv8j7Q" target="_blank" class="nav-link">Videos</a></li>
-                <li><a href="https://worldcorpinternational.beehiiv.com/" target="_blank" class="nav-link">News</a></li>
-                <li><a href="team.html" class="nav-link">Team</a></li>
-                <li><a href="portfolio.html" class="nav-link active">Featured</a></li>
-                <li><a href="more.html" class="nav-link">More</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
+    <header class="firm-nav">
+        <div class="firm-nav-inner">
+            <a href="/" class="firm-brand">
+                <img src="graphic assets/worldcorp-icon.png" alt="WorldCorp International">
+                <span class="firm-brand-word">WorldCorp <em>International</em></span>
+            </a>
+            <ul class="firm-nav-links">
+                <li><a href="portfolio.html" class="active">Capabilities</a></li>
+                <li><a href="more.html">Insights</a></li>
+                <li class="firm-nav-dropdown">
+                    <button type="button" class="firm-nav-dropdown-toggle">More</button>
+                    <div class="firm-nav-dropdown-menu">
+                        <ul class="firm-nav-dropdown-menu-inner">
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="summit.html">WorldCon Summit</a></li>
+                            <li><a href="https://www.headquarterscomedy.com/" target="_blank" rel="noopener">Headquarters Comedy</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
+            <div class="firm-nav-cta">
+                <a href="https://headquarterscomedy.beehiiv.com/" target="_blank" class="firm-btn firm-btn--outline">Newsletter</a>
+                <a href="get-in-touch.html" class="firm-btn firm-btn--primary">Book a Consultation</a>
+            </div>
+            <button class="firm-nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
+    </header>
+    <div class="firm-mobile-panel">
+        <ul>
+            <li><a href="portfolio.html">Capabilities</a></li>
+            <li><a href="more.html">Insights</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="summit.html">WorldCon Summit</a></li>
+            <li><a href="https://www.headquarterscomedy.com/" target="_blank" rel="noopener">Headquarters Comedy</a></li>
+            <li><a href="get-in-touch.html">Book a Consultation</a></li>
+        </ul>
     </div>
 
     <main>
-        <!-- Page Header -->
-        <section class="page-header">
-            <div class="container">
-                <h1>Our coverage philosophy</h1>
-                <p>The companies we highlight usually do one of six things.</p>
+        <section class="firm-page-hero">
+            <div class="firm-wrap firm-hero-grid">
+                <div>
+                    <p class="firm-eyebrow">Capabilities</p>
+                    <h1>Unlocking value nobody <em>asked</em> us to.</h1>
+                    <p>Backed by data. Built by action. And the action is based on the data. And the data is also built by the action.</p>
+                </div>
+                <div class="firm-hero-panel firm-reveal">
+                    <div class="firm-hero-panel-bar">
+                        <span></span><span></span><span></span>
+                        <span class="firm-panel-title">synergy_matrix_v4_FINAL_final2.xlsx</span>
+                    </div>
+                    <div class="firm-hero-panel-body">
+                        <div class="firm-panel-row firm-panel-head">
+                            <span>Engagement</span><span>Confidence</span><span>Δ QoQ</span>
+                        </div>
+                        <div class="firm-panel-row">
+                            <span>Speaking Coaching</span><span class="firm-panel-metric">quite high</span><span class="firm-panel-delta up">&#9650; 14%</span>
+                        </div>
+                        <div class="firm-panel-row">
+                            <span>Punch Up</span><span class="firm-panel-metric">tbd</span><span class="firm-panel-delta flat">&mdash; 0%</span>
+                        </div>
+                        <div class="firm-panel-row">
+                            <span>Presentation &amp; Keynote Prep</span><span class="firm-panel-metric">aligned*</span><span class="firm-panel-delta up">&#9650; 6%</span>
+                        </div>
+                        <div class="firm-panel-row">
+                            <span>Interviews &amp; Branded Docs</span><span class="firm-panel-metric">n/a</span><span class="firm-panel-delta down">&#9660; 31%</span>
+                        </div>
+                        <div class="firm-panel-row">
+                            <span>Street Interviews &amp; Stunts</span><span class="firm-panel-metric">in progress</span><span class="firm-panel-delta up">&#9650; 2%</span>
+                        </div>
+                        <div class="firm-panel-row">
+                            <span>LinkedIn Content &amp; Memes</span><span class="firm-panel-metric">unclear</span><span class="firm-panel-delta flat">&mdash; 0%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Filter Tabs -->
-        <section class="portfolio-content">
-            <div class="container">
-                <!-- Coverage Philosophy -->
-                <div class="coverage-philosophy">
-                    <div class="philosophy-grid">
-                        <div class="philosophy-item">
-                            <div class="philosophy-icon">✨</div>
-                            <h3>Improve Quality of Life</h3>
-                        </div>
-                        <div class="philosophy-item">
-                            <div class="philosophy-icon">⚖️</div>
-                            <h3>Reduce Wealth Inequality</h3>
-                        </div>
-                        <div class="philosophy-item">
-                            <div class="philosophy-icon">📚</div>
-                            <h3>Increase Access to Education & Resources</h3>
-                        </div>
-                        <div class="philosophy-item">
-                            <div class="philosophy-icon">❤️</div>
-                            <h3>Improve Health, Nutrition, & Wellbeing</h3>
-                        </div>
-                        <div class="philosophy-item">
-                            <div class="philosophy-icon">♻️</div>
-                            <h3>Improve Sustainability</h3>
-                        </div>
-                        <div class="philosophy-item">
-                            <div class="philosophy-icon">🕊️</div>
-                            <h3>Reduce Conflict, Violence, & Corruption</h3>
-                        </div>
+        <section class="firm-section">
+            <div class="firm-wrap">
+                <div class="firm-section-head firm-reveal">
+                    <div>
+                        <p class="firm-index-label">01 &mdash; What We Do</p>
+                        <h2>Everywhere you&rsquo;re seen, heard, or read.</h2>
                     </div>
                 </div>
-
-                <!-- Active Investments -->
-                <div class="portfolio-grid" id="portfolio-grid">
-                    <!-- Success Story -->
-                    <div class="portfolio-item active" data-category="active">
-                        <div class="portfolio-logo">
-                            <div class="logo-placeholder success">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                    <rect width="80" height="80" rx="16" fill="var(--success-color)"/>
-                                    <path d="M25 40L35 50L55 30" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="portfolio-info">
-                            <h3 class="company-name">GreenTech Solutions</h3>
-                            <p class="company-category">Clean Energy • Series B</p>
-                            <p class="company-description">
-                                Revolutionary solar panel technology that's 40% more efficient than traditional panels. 
-                                Currently expanding across the Southwest US market.
-                            </p>
-                            <div class="investment-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Invested</span>
-                                    <span class="detail-value">$250K</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Valuation</span>
-                                    <span class="detail-value">$45M</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Status</span>
-                                    <span class="detail-value status-active">Active</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="firm-grid-3 firm-reveal">
+                    <div class="firm-card">
+                        <span class="firm-card-num">01</span>
+                        <h3>Speaking Coaching</h3>
+                        <p>We prepare executives to speak in public confidently, coherently, and without saying anything that later requires a follow-up statement.</p>
                     </div>
-
-                    <!-- Promising Startup -->
-                    <div class="portfolio-item active" data-category="active">
-                        <div class="portfolio-logo">
-                            <div class="logo-placeholder">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                    <rect width="80" height="80" rx="16" fill="var(--accent-color)"/>
-                                    <path d="M20 60L40 20L60 60H20Z" fill="#000" opacity="0.3"/>
-                                    <text x="40" y="70" text-anchor="middle" fill="#000" font-size="10" font-weight="bold">FP</text>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="portfolio-info">
-                            <h3 class="company-name">FinPal</h3>
-                            <p class="company-category">FinTech • Seed</p>
-                            <p class="company-description">
-                                AI-powered personal finance assistant that helps millennials actually understand their money. 
-                                Because apparently "just don't buy avocado toast" isn't comprehensive financial advice.
-                            </p>
-                            <div class="investment-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Invested</span>
-                                    <span class="detail-value">$100K</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Valuation</span>
-                                    <span class="detail-value">$8M</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Status</span>
-                                    <span class="detail-value status-active">Active</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="firm-card">
+                        <span class="firm-card-num">02</span>
+                        <h3>Punch Up</h3>
+                        <p>We take an existing script, deck, or all-hands memo and rewrite the parts that were supposed to be funny.</p>
                     </div>
-
-                    <!-- Big Win -->
-                    <div class="portfolio-item exited" data-category="exited">
-                        <div class="portfolio-logo">
-                            <div class="logo-placeholder success">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                    <rect width="80" height="80" rx="16" fill="var(--success-color)"/>
-                                    <path d="M40 15L45 30H60L48 40L53 55L40 45L27 55L32 40L20 30H35L40 15Z" fill="white"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="portfolio-info">
-                            <h3 class="company-name">CloudSync Pro</h3>
-                            <p class="company-category">SaaS • Series A → Acquired</p>
-                            <p class="company-description">
-                                Business workflow automation tool that was acquired by Microsoft for $180M. 
-                                Our best investment decision so far (we're still buying rounds for everyone).
-                            </p>
-                            <div class="investment-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Invested</span>
-                                    <span class="detail-value">$150K</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Exit Value</span>
-                                    <span class="detail-value">$2.1M</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Multiple</span>
-                                    <span class="detail-value status-success">14x</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="firm-card">
+                        <span class="firm-card-num">03</span>
+                        <h3>Presentation &amp; Keynote Prep</h3>
+                        <p>We build the deck, the timing, and the delivery, so nothing about the keynote feels improvised.</p>
                     </div>
-
-                    <!-- Another Exit -->
-                    <div class="portfolio-item exited" data-category="exited">
-                        <div class="portfolio-logo">
-                            <div class="logo-placeholder">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                    <rect width="80" height="80" rx="16" fill="#4ade80"/>
-                                    <circle cx="40" cy="40" r="20" fill="white" opacity="0.9"/>
-                                    <path d="M30 40L36 46L50 32" stroke="#4ade80" stroke-width="3" stroke-linecap="round"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="portfolio-info">
-                            <h3 class="company-name">HealthTrack</h3>
-                            <p class="company-category">HealthTech • Seed → IPO</p>
-                            <p class="company-description">
-                                Wearable health monitoring platform that went public in 2023. Not bad for a company that 
-                                started in a garage and whose first prototype was held together with duct tape.
-                            </p>
-                            <div class="investment-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Invested</span>
-                                    <span class="detail-value">$75K</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Exit Value</span>
-                                    <span class="detail-value">$420K</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Multiple</span>
-                                    <span class="detail-value status-success">5.6x</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="firm-card">
+                        <span class="firm-card-num">04</span>
+                        <h3>Interviews &amp; Branded Docs</h3>
+                        <p>Long-form conversations and branded documentaries that make an organization&rsquo;s story worth someone else&rsquo;s time.</p>
                     </div>
-
-                    <!-- Learning Experience -->
-                    <div class="portfolio-item failed" data-category="failed">
-                        <div class="portfolio-logo">
-                            <div class="logo-placeholder failed">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                    <rect width="80" height="80" rx="16" fill="var(--error-color)" opacity="0.7"/>
-                                    <path d="M25 25L55 55M55 25L25 55" stroke="white" stroke-width="4" stroke-linecap="round"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="portfolio-info">
-                            <h3 class="company-name">PetCoin</h3>
-                            <p class="company-category">Crypto • ICO → Shut Down</p>
-                            <p class="company-description">
-                                Cryptocurrency for pet owners. Seemed like a good idea at the time. Turns out dogs don't 
-                                actually care about blockchain technology. Valuable lesson in market research.
-                            </p>
-                            <div class="investment-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Invested</span>
-                                    <span class="detail-value">$200K</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Loss</span>
-                                    <span class="detail-value">-$200K</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Lesson</span>
-                                    <span class="detail-value status-failed">Expensive</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="firm-card">
+                        <span class="firm-card-num">05</span>
+                        <h3>Street Interviews &amp; Marketing Stunts</h3>
+                        <p>Unscripted, in-public content and stunts built to look spontaneous and perform like they weren&rsquo;t.</p>
                     </div>
-
-                    <!-- Another Learning Experience -->
-                    <div class="portfolio-item failed" data-category="failed">
-                        <div class="portfolio-logo">
-                            <div class="logo-placeholder failed">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                    <rect width="80" height="80" rx="16" fill="var(--warning-color)"/>
-                                    <path d="M40 20L48 40H32L40 20Z" fill="white"/>
-                                    <circle cx="40" cy="55" r="3" fill="white"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="portfolio-info">
-                            <h3 class="company-name">FoodieBot</h3>
-                            <p class="company-category">FoodTech • Series A → Pivoted to Death</p>
-                            <p class="company-description">
-                                AI-powered food delivery robot that was supposed to revolutionize takeout. 
-                                Turns out people prefer their food delivered by humans who don't get confused by stairs.
-                            </p>
-                            <div class="investment-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Invested</span>
-                                    <span class="detail-value">$180K</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Recovery</span>
-                                    <span class="detail-value">$15K</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Status</span>
-                                    <span class="detail-value status-failed">RIP</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="firm-card">
+                        <span class="firm-card-num">06</span>
+                        <h3>LinkedIn Content &amp; Memes</h3>
+                        <p>Native-feeling posts that make a brand sound like a person, not a comms department.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Quote -->
+        <section class="firm-section firm-section--alt">
+            <div class="firm-wrap">
+                <p class="firm-index-label" style="margin-bottom:24px;">02 &mdash; What They Say</p>
+                <div class="firm-reveal">
+                    <p class="firm-quote">&ldquo;We brought in WorldCorp International for a two-week engagement. Fourteen months later, we&rsquo;re not sure what happened. But our stakeholders feel aligned.&rdquo;</p>
+                    <p class="firm-quote-attr">&mdash; Charle Boutie, Boutie &amp; Associates, LLP</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="firm-section">
+            <div class="firm-wrap">
+                <div class="firm-section-head firm-reveal">
+                    <div>
+                        <p class="firm-index-label">03 &mdash; Selected Case Studies</p>
+                        <h2>Real examples of WorldCorp doing fake work.</h2>
+                    </div>
+                </div>
+                <div class="firm-grid-3 firm-reveal">
+                    <div class="firm-card">
+                        <span class="firm-card-num">Case 01</span>
+                        <h3>Regional Bakery, Blockchain Pivot</h3>
+                        <p>Helped a family bakery generate $0 in blockchain revenue over 18 months. They make excellent croissants, unrelated to our work.</p>
+                    </div>
+                    <div class="firm-card">
+                        <span class="firm-card-num">Case 02</span>
+                        <h3>Mid-Cap Logistics, Org Redesign</h3>
+                        <p>Reorganized a 400-person logistics firm into 14 &ldquo;pods.&rdquo; Nobody, including the pods, knows what a pod is.</p>
+                    </div>
+                    <div class="firm-card">
+                        <span class="firm-card-num">Case 03</span>
+                        <h3>Legacy Retailer, Digital Transformation</h3>
+                        <p>Migrated a 40-year-old retailer to &ldquo;the cloud.&rdquo; The cloud was a shared spreadsheet. It still is.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="firm-cta-banner">
+            <div class="firm-wrap firm-reveal">
+                <h2>Not sure which capability<br class="firm-hero-br"> you <em>need</em>? Neither are we.</h2>
+                <a href="get-in-touch.html" class="firm-btn firm-btn--primary firm-btn--arrow">Book a Consultation <span>&rarr;</span></a>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Headquarters Agency</h3>
-                    <p>Idiots taking on assholes.</p>
+    <footer class="firm-footer" id="subscribe">
+        <div class="firm-wrap">
+            <div class="firm-footer-grid">
+                <div>
+                    <p class="firm-footer-brand">WorldCorp International</p>
+                    <p class="firm-footer-tag">A think-tank, market research, and global strategy firm. Business is our business.</p>
+                    <div class="firm-newsletter-inline">
+                        <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script><iframe src="https://subscribe-forms.beehiiv.com/bf61c1a8-2752-4b92-b0c3-6faccafde9a7" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no"></iframe>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h4>Content</h4>
-                        <ul>
-                            <li><a href="https://www.youtube.com/channel/UCir75v6OcimhuKf5Hrv8j7Q" target="_blank">YouTube</a></li>
-                            <li><a href="#" id="footer-spotify">Spotify</a></li>
-                            <li><a href="#" id="footer-apple">Apple Podcasts</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h4>Newsletter</h4>
-                        <ul>
-                            <li><a href="https://worldcorpinternational.beehiiv.com/" target="_blank">Visit Site</a></li>
-                            <li><a href="https://worldcorpinternational.beehiiv.com/subscribe" target="_blank">Subscribe</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h4>Connect</h4>
-                        <ul>
-                            <li><a href="https://x.com/hq_ventures" target="_blank" id="footer-x">X</a></li>
-                            <li><a href="https://www.instagram.com/worldcorpinternational/" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.tiktok.com/@worldcorp.interna" target="_blank">TikTok</a></li>
-                            <li><a href="#" id="footer-linkedin">LinkedIn</a></li>
-                        </ul>
-                    </div>
+                <div class="firm-footer-col">
+                    <h5>The Firm</h5>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Capabilities</a></li>
+                        <li><a href="summit.html">WorldCon Summit</a></li>
+                        <li><a href="more.html">Insights</a></li>
+                        <li><a href="get-in-touch.html">Get in Touch</a></li>
+                    </ul>
+                </div>
+                <div class="firm-footer-col">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/company/headquarters-comedy/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/headquarterscomedy/" target="_blank">Instagram</a></li>
+                        <li><a href="https://headquarterscomedy.beehiiv.com/" target="_blank">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="firm-footer-col">
+                    <h5>Follow Gabe</h5>
+                    <ul>
+                        <li><a href="https://www.instagram.com/gabe_makes_jokes/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@gabe_makes_jokes/shorts" target="_blank">YouTube</a></li>
+                        <li><a href="https://x.com/gabe_makes_joke" target="_blank">X</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Headquarters Agency. All rights reserved.</p>
+            <div class="firm-footer-bottom">
+                <span>&copy; 2026 WorldCorp International. A wholly owned subsidiary of Headquarters Comedy.</span>
+                <span>Advice contained on this site is not legal, financial, medical, or otherwise advice of any kind.</span>
             </div>
         </div>
     </footer>
 
-    <script src="scripts/app.js"></script>
+    <script src="scripts/site.js"></script>
 </body>
 </html>
