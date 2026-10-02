@@ -1,5 +1,5 @@
 /**
- * WorldCorp International Website JavaScript
+ * Headquarters Agency Website JavaScript
  * Handles loading and displaying podcast episodes and blog posts
  */
 
@@ -60,7 +60,7 @@ class HQVSite {
             this.displayError('Could not load site configuration.');
             // Fallback config
             this.config = {
-                site_name: "WorldCorp International",
+                site_name: "Headquarters Agency",
                 tagline: "Business, comedy, and the occasional bad idea.",
                 accent_color: "#2B6B99",
                 on_air: false,

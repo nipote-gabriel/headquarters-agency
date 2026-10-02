@@ -1,4 +1,4 @@
-/* WorldCorp International — consultancy site interactions */
+/* Headquarters Agency — consultancy site interactions */
 (function () {
     function setupNav() {
         var toggle = document.querySelector('.firm-nav-toggle');

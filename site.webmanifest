@@ -1,6 +1,6 @@
 {
-  "name": "WorldCorp International",
-  "short_name": "WorldCorp",
+  "name": "Headquarters Agency",
+  "short_name": "HQ",
   "icons": [
     { "src": "graphic assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "graphic assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
