@@ -805,6 +805,16 @@
 
 /* ---------- Footer ---------- */
 .firm-footer { padding: 64px 0 32px; background: var(--bg); }
+
+/* Big wordmark, full-bleed, sitting on the very bottom edge */
+.firm-footer-wordmark { margin: 64px 0 -32px; line-height: 0; }
+.firm-footer-wordmark img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* the PNG's black fill is darker than the footer; let it blend away */
+    mix-blend-mode: lighten;
+}
 .firm-footer-grid {
     display: grid;
     grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
