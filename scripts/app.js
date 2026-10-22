@@ -991,7 +991,7 @@ function subscribeToNewsletter() {
     }
 
     // Open beehiiv subscription page with email pre-filled if possible
-    const subscribeUrl = `https://in-competence-we-trust.beehiiv.com/subscribe?email=${encodeURIComponent(email)}`;
+    const subscribeUrl = `https://incompetencewetrust.beehiiv.com/subscribe?email=${encodeURIComponent(email)}`;
     window.open(subscribeUrl, '_blank');
 
     // Clear the input
