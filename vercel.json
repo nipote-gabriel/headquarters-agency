@@ -39,5 +39,27 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/summit",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/summit.html",
+      "destination": "/",
+      "permanent": true
+    }
   ]
 }
